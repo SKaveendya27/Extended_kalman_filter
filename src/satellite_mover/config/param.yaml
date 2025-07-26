@@ -1,0 +1,56 @@
+# gz topic subscribed to by Velocity Control Plugin
+- ros_topic_name: "cmd_vel"
+  gz_topic_name: "cmd_vel"
+  ros_type_name: "geometry_msgs/msg/Twist"
+  gz_type_name: "gz.msgs.Twist"
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "sat/pose"
+  gz_topic_name: "/model/satellite/pose"
+  ros_type_name: "geometry_msgs/msg/Pose"
+  gz_type_name: "gz.msgs.Pose"
+  direction: GZ_TO_ROS
+
+- ros_topic_name: "sat/odom"
+  gz_topic_name: "/model/satellite/odometry"
+  ros_type_name: "nav_msgs/msg/Odometry"
+  gz_type_name: "gz.msgs.Odometry"
+  direction: GZ_TO_ROS
+
+- ros_topic_name: "realsense_l515_/image"
+  gz_topic_name: "realsense_l515_/image"
+  ros_type_name: "sensor_msgs/msg/Image"
+  gz_type_name: "gz.msgs.Image"
+  direction: "ROS_TO_GZ"
+
+- ros_topic_name: "realsense_l515_/depth_image"
+  gz_topic_name: "realsense_l515_/depth_image"
+  ros_type_name: "sensor_msgs/msg/PointCloud2"
+  gz_type_name: "gz.msgs.PointCloudPacked"
+  direction: "ROS_TO_GZ"
+
+- ros_topic_name: "realsense_l515_/camera_info"
+  gz_topic_name: "realsense_l515_/camera_info"
+  ros_type_name: "sensor_msgs/msg/CameraInfo"
+  gz_type_name: "gz.msgs.CameraInfo"
+  direction: "ROS_TO_GZ"
+
+- ros_topic_name: "/clock"
+  gz_topic_name: "/clock"
+  ros_type_name: "rosgraph_msgs/msg/Clock"
+  gz_type_name: "gz.msgs.Clock"
+  direction: "GZ_TO_ROS"
+
+# Optional joint states (if you have joints in your robot model)
+- ros_topic_name: "/world/default/model/camera_model/joint_state"
+  gz_topic_name: "/world/default/model/camera_model/joint_state"
+  ros_type_name: "sensor_msgs/msg/JointState"
+  gz_type_name: "gz.msgs.Model"
+  direction: "GZ_TO_ROS"
+
+# Joint target control (ROS <-> Gazebo)
+- ros_topic_name: "/model/camera_model/cmd_vel"
+  gz_topic_name: "/model/camera_model/cmd_vel"
+  ros_type_name: "geometry_msgs/msg/Twist"
+  gz_type_name: "gz.msgs.Twist"
+  direction: "ROS_TO_GZ"

@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name ="Satellite">    
+    <link name="world">
+        <link name="sat_body">
+            <visual>
+                <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+                    <geometry>
+                        <mesh filename="package://satellite_description/meshes/Cube_Deko_Features.stl" scale="1.0"/>
+                    </geometry>
+            </visual>
+        </link>
+    </link>
+</robot>

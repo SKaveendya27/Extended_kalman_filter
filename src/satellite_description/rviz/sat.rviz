@@ -1,0 +1,32 @@
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/RobotModel
+      Enabled: true
+      Name: Satellite Model
+      Robot Description: robot_description
+      Visual Enabled: true
+      Collision Enabled: false
+    - Class: rviz_default_plugins/Grid
+      Enabled: true
+      Name: Grid
+    - Class: rviz_default_plugins/TF
+      Enabled: true
+      Name: TF
+    - Class: rviz_default_plugins/Image
+      Enabled: true
+      Name: Camera Image
+      Image Topic: /realsense_l515_/image
+      Transport Hint: raw
+    # Uncomment if you have a depth cloud topic
+    # - Class: rviz_default_plugins/PointCloud2
+    #   Enabled: true
+    #   Name: Camera Depth
+    #   Topic: /camera/depth/points
+    #   Queue Size: 10
+    #   Selectable: true
+  Global Options:
+    Fixed Frame: base_link
+  Enabled: true
+
+     
