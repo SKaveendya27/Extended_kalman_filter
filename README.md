@@ -37,9 +37,9 @@ This README provides detailed instructions to set up, build, and run the project
 1. **Clone the Repository**:
    Clone the project repository from Git to your local machine:
    ```bash
-   git clone <repository-url> ~/ros2_ws/src/satellite_mover
+   git clone https://github.com/SKaveendya27/Extended_kalman_filter.git ~/ros2_ws/src/satellite_mover
    ```
-   Replace `<repository-url>` with the actual URL of your Git repository.
+   
 
 2. **Navigate to Workspace**:
    ```bash
