@@ -16,7 +16,7 @@ class PoseTimeSeriesPlotter(Node):
         self.create_subscription(Odometry, 'sat/odom', self.gt_callback, 10)
         self.create_subscription(Odometry, '/odometry/filtered', self.ekf_callback, 10)
 
-        # Timer to plot after 10 seconds
+        # Timer to plot after 30 seconds
         self.create_timer(30.0, self.plot_all)
 
     def extract_pose(self, msg):
